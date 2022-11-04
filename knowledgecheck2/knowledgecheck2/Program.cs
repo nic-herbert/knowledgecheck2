@@ -26,10 +26,12 @@ class Program
 
             Console.WriteLine("Enter the value for brand ");
             Electric.brand = Console.ReadLine();
+
             Console.WriteLine("Enter the value for model ");
             Electric.guitarModel = Console.ReadLine();
 
 
+            recordList.Add(Electric);
 
             recordList.Add(Electric);
             Console.WriteLine(Electric.guitarModel);
@@ -38,6 +40,12 @@ class Program
 
         // Print out the list of records using Console.WriteLine()
 
+        foreach (var record in recordList)
+        {
+            Console.WriteLine(record.brand);
+            Console.WriteLine(record.guitarModel);
+
+        }
 
 
     }
